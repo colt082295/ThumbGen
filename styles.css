@@ -1,0 +1,12 @@
+video {
+    display: inline;
+    max-height: 70vh;
+}
+
+#video-to-upload {
+    display: none;
+}
+
+#folder-to-upload {
+    display: none;
+}

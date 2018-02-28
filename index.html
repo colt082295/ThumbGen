@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="upload-container">
+            <button id="video-upload-button">Select Video(s)</button> 
+            <input type="file" id="video-to-upload" multiple />
+            <button id="folder-upload-button">Select Folder</button> 
+            <input type="file" id="folder-to-upload" webkitdirectory directory value="Select Folder" />
+        </div>
+        <div class="video-container">
+            <video id="main-video" controls>
+                <source>
+            </video>
+            <canvas id="video-canvas"></canvas>
+            <div id="thumbnail-container">
+                    Seek to <select id="set-video-seconds"></select> seconds <a id="get-thumbnail" href="#">Download Thumbnail</a>
+            </div>
+        </div>
+        </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
